@@ -52,13 +52,13 @@ const Dashboard = ({ className, name, account }) => {
             />
           </span>
         </Col>
-        <Col xs={11}>
+        <Col lg={8} xs={12}>
           <h4>{name}</h4>
           <p className='text-muted'>{account}</p>
         </Col>
       </Row>
       <Row>
-        <Col xs={12} lg={2}>
+        <Col xs={8} lg={2}>
           {links.map(({ text, path }, key) => (
             <Link className='dashboard__link' to={path} key={key}>
               <Button
